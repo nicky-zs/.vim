@@ -52,7 +52,7 @@ let g:go_highlight_variable_assignments = 1
 
 nnoremap <F12> :TagbarToggle<CR>
 
-nnoremap <F11> :NERDTreeToggle<CR>
+nnoremap <F11> :NERDTreeClose<CR>
 nnoremap <leader>r :NERDTreeFind<CR>
 let g:NERDTreeDirArrowExpandable = '◢'
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
@@ -63,8 +63,8 @@ let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_semantic_triggers = {}
 let g:ycm_show_diagnostics_ui = 0
 let g:ycm_key_invoke_completion = '<c-a>'
-let g:ycm_key_list_stop_completion = ['<CR>']
-let g:ycm_key_list_select_completion = ['<c-j>', '<Down>']
+let g:ycm_key_list_stop_completion = ['<CR>', '<ESC>']
+let g:ycm_key_list_select_completion = ['<c-j>', '<Down>', '<Tab>']
 let g:ycm_key_list_previous_completion = ['<c-k>', '<Up>']
 let g:ycm_filetype_whitelist = {'c':1,'cpp':1,'python':1,'go':1,'sh':1,'lua':1}
 
