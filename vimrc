@@ -29,7 +29,7 @@ set fileencodings=ucs-bom,utf8,latin1
 set backspace=indent,eol,start
 
 set nu ru ai ci hlsearch
-set ts=4 sw=4 sts=4 so=5
+set ts=4 sw=4 sts=4 so=4
 
 hi Search ctermbg=White
 hi Search ctermfg=Black
