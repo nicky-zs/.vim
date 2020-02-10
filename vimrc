@@ -55,7 +55,7 @@ nnoremap <F12> :TagbarToggle<CR>
 nnoremap <F11> :NERDTreeToggle<CR>
 nnoremap <leader>r :NERDTreeFind<CR>
 let g:NERDTreeDirArrowExpandable = '◢'
-let g:NERDTreeDirArrowCollapsible = '▼'
+let g:NERDTreeDirArrowCollapsible = '◤'
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 nnoremap <leader>g :YcmCompleter GoTo<CR>
