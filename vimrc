@@ -58,7 +58,7 @@ let g:NERDTreeDirArrowExpandable = '>'
 let g:NERDTreeDirArrowCollapsible = '|'
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-nnoremap <leader>jd :YcmCompleter GoTo<CR>
+nnoremap <leader>g :YcmCompleter GoTo<CR>
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_semantic_triggers = {}
