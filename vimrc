@@ -32,8 +32,8 @@ set nu ru ai ci hls cul
 set ts=4 sw=4 sts=4 so=4
 
 hi Search ctermfg=Black ctermbg=White
-hi CursorLine cterm=NONE
-hi CursorLineNr cterm=NONE ctermbg=237
+hi CursorLine cterm=NONE ctermbg=234
+hi CursorLineNr cterm=NONE ctermbg=234
 
 syntax enable on
 
