@@ -28,15 +28,16 @@ set fileencoding=utf-8
 set fileencodings=ucs-bom,utf8,latin1
 set backspace=indent,eol,start
 
-set nu ru ai ci hlsearch
+set nu ru ai ci hls cul
 set ts=4 sw=4 sts=4 so=4
 
-hi Search ctermbg=White
-hi Search ctermfg=Black
+hi Search ctermfg=Black ctermbg=White
+hi CursorLine cterm=NONE
+hi CursorLineNr cterm=NONE ctermbg=237
 
-syntax enable
-syntax on
+syntax enable on
 
+"vim-go
 let g:go_template_autocreate = 0
 let g:go_gopls_enabled = 0
 let g:go_highlight_extra_types = 1
@@ -50,13 +51,16 @@ let g:go_highlight_build_constraints = 1
 let g:go_highlight_variable_declarations = 1
 let g:go_highlight_variable_assignments = 1
 
+"tagbar
 nnoremap <F12> :TagbarToggle<CR>
 
+"nerdtree
 nnoremap <F11> :NERDTreeClose<CR>
 nnoremap <leader>r :NERDTreeFind<CR>
 let g:NERDTreeDirArrowExpandable = '◢'
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+"ycm
 nnoremap <leader>g :YcmCompleter GoTo<CR>
 set completeopt=menu,menuone
 let g:ycm_add_preview_to_completeopt = 0
