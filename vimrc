@@ -22,20 +22,16 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+syntax enable on
 
-set encoding=utf-8
-set fileencoding=utf-8
-set fileencodings=ucs-bom,utf8,latin1
-set backspace=indent,eol,start
-
-set nu ru ai ci hls cul
+set enc=utf-8 fenc=utf-8 fencs=ucs-bom,utf8,latin1
 set ts=4 sw=4 sts=4 so=4
+set nu ru ai ci hls cul
+set backspace=indent,eol,start
 
 hi Search ctermfg=Black ctermbg=White
 hi CursorLine cterm=NONE ctermbg=234
 hi CursorLineNr cterm=NONE ctermbg=234
-
-syntax enable on
 
 "vim-go
 let g:go_template_autocreate = 0
