@@ -1,27 +1,18 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
+set nocompatible                  " be iMproved, required
+filetype off                      " required
+set rtp+=~/.vim/bundle/Vundle.vim " set the runtime path to include Vundle and initialize
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
+Plugin 'VundleVim/Vundle.vim'     " let Vundle manage Vundle, required
 Plugin 'Vimjas/vim-python-pep8-indent'
 Plugin 'fatih/vim-go'
 Plugin 'preservim/nerdtree'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'majutsushi/tagbar'
+call vundle#end()                 " required, Plugins must be added before this line
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
+filetype plugin indent on         " required
+
 syntax enable on
 
 set enc=utf-8 fenc=utf-8 fencs=ucs-bom,utf8,latin1
@@ -33,7 +24,7 @@ hi Search ctermfg=Black ctermbg=White
 hi CursorLine cterm=NONE ctermbg=234
 hi CursorLineNr cterm=NONE ctermbg=234
 
-"vim-go
+" vim-go
 let g:go_template_autocreate = 0
 let g:go_gopls_enabled = 0
 let g:go_highlight_extra_types = 1
@@ -47,16 +38,16 @@ let g:go_highlight_build_constraints = 1
 let g:go_highlight_variable_declarations = 1
 let g:go_highlight_variable_assignments = 1
 
-"tagbar
+" tagbar
 nnoremap <F12> :TagbarToggle<CR>
 
-"nerdtree
+" nerdtree
 nnoremap <F11> :NERDTreeToggle<CR>
 nnoremap <leader>r :NERDTreeFind<CR>
 let g:NERDTreeDirArrowExpandable = '◢'
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-"ycm
+" ycm
 nnoremap <leader>g :YcmCompleter GoTo<CR>
 set completeopt=menu,menuone
 let g:ycm_add_preview_to_completeopt = 0
