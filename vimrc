@@ -42,7 +42,7 @@ let g:go_highlight_variable_assignments = 1
 nnoremap <F12> :TagbarToggle<CR>
 
 " nerdtree
-nnoremap <F11> :NERDTreeToggle<CR>
+nnoremap <F2> :NERDTreeToggle<CR>
 nnoremap <leader>r :NERDTreeFind<CR>
 let g:NERDTreeDirArrowExpandable = '◢'
 autocmd StdinReadPre * let s:std_in=1
