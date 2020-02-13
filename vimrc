@@ -21,8 +21,8 @@ set nu ru ai ci hls cul
 set backspace=indent,eol,start
 
 hi Search ctermfg=Black ctermbg=White
-hi CursorLine cterm=NONE ctermbg=234
-hi CursorLineNr cterm=NONE ctermbg=234
+hi CursorLine cterm=NONE ctermbg=235
+hi CursorLineNr cterm=NONE ctermbg=235
 
 " vim-go
 let g:go_template_autocreate = 0
