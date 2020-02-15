@@ -51,6 +51,8 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 " ycm
 nnoremap <leader>g :YcmCompleter GoTo<CR>
+nnoremap <leader>t :YcmCompleter GetType<CR>
+nnoremap <leader>f :YcmCompleter GoToReferences<CR>
 set completeopt=menu,menuone
 let g:ycm_add_preview_to_completeopt = 0
 let g:ycm_autoclose_preview_window_after_insertion = 1
