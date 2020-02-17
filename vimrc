@@ -19,6 +19,7 @@ set enc=utf-8 fenc=utf-8 fencs=ucs-bom,utf8,latin1
 set ts=4 sw=4 sts=4 so=2
 set nu ru ai ci hls cul
 set backspace=indent,eol,start
+set mouse=a
 
 hi Search ctermfg=Black ctermbg=White
 hi CursorLine cterm=NONE ctermbg=235
