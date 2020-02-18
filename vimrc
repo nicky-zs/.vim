@@ -41,6 +41,7 @@ let g:go_highlight_variable_assignments = 1
 
 " tagbar
 nnoremap <F12> :TagbarToggle<CR>
+let g:tagbar_iconchars = ['+', '-']
 
 " nerdtree
 nnoremap <F2> :NERDTreeToggle<CR>
