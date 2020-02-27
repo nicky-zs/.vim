@@ -26,8 +26,10 @@ hi CursorLine cterm=NONE ctermbg=235
 hi CursorLineNr cterm=NONE ctermbg=235
 
 " vim-go
-let g:go_template_autocreate = 0
 let g:go_gopls_enabled = 0
+let g:go_code_completion_enabled = 0
+let g:go_gopls_enabled = 0
+let g:go_template_autocreate = 0
 let g:go_highlight_extra_types = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_functions = 1
@@ -58,15 +60,13 @@ autocmd FileType nerdtree nnoremap <buffer> <leader>r <nop>
 nnoremap <leader>g :YcmCompleter GoTo<CR>
 nnoremap <leader>t :YcmCompleter GetType<CR>
 nnoremap <leader>f :YcmCompleter GoToReferences<CR>
-set completeopt=menu,menuone
-let g:ycm_add_preview_to_completeopt = 0
-let g:ycm_autoclose_preview_window_after_insertion = 1
-let g:ycm_autoclose_preview_window_after_completion = 1
+set completeopt-=preview
+set ttimeoutlen=0
 let g:ycm_semantic_triggers = {}
 let g:ycm_show_diagnostics_ui = 0
 let g:ycm_auto_trigger = 0
 let g:ycm_key_invoke_completion = '<C-a>'
-let g:ycm_key_list_stop_completion = ['<CR>', '<ESC>']
+let g:ycm_key_list_stop_completion = ['<CR>']
 let g:ycm_key_list_select_completion = ['<C-j>', '<Down>', '<Tab>']
 let g:ycm_key_list_previous_completion = ['<C-k>', '<Up>']
 let g:ycm_filetype_whitelist = {'c':1,'cpp':1,'python':1,'go':1,'sh':1,'lua':1}
