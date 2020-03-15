@@ -70,4 +70,5 @@ let g:ycm_key_list_stop_completion = ['<CR>']
 let g:ycm_key_list_select_completion = ['<C-j>', '<Down>', '<Tab>']
 let g:ycm_key_list_previous_completion = ['<C-k>', '<Up>']
 let g:ycm_filetype_whitelist = {'c':1,'cpp':1,'python':1,'go':1,'sh':1,'lua':1}
+let g:ycm_max_num_candidates = 100
 
