@@ -25,6 +25,9 @@ hi Search ctermfg=Black ctermbg=White
 hi CursorLine cterm=NONE ctermbg=235
 hi CursorLineNr cterm=NONE ctermbg=235
 
+nnoremap <C-Left> :tabprevious<CR>
+nnoremap <C-Right> :tabnext<CR>
+
 " vim-go
 let g:go_gopls_enabled = 0
 let g:go_code_completion_enabled = 0
