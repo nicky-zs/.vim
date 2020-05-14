@@ -64,6 +64,7 @@ autocmd FileType nerdtree nnoremap <buffer> <leader>r <nop>
 nnoremap <leader>g :YcmCompleter GoTo<CR>
 nnoremap <leader>t :YcmCompleter GetType<CR>
 nnoremap <leader>f :YcmCompleter GoToReferences<CR>
+nmap <leader>d <plug>(YCMHover)
 set completeopt-=preview
 set ttimeoutlen=0
 let g:ycm_semantic_triggers = {}
@@ -75,4 +76,5 @@ let g:ycm_key_list_select_completion = ['<C-j>', '<Down>', '<Tab>']
 let g:ycm_key_list_previous_completion = ['<C-k>', '<Up>']
 let g:ycm_filetype_whitelist = {'c':1,'cpp':1,'python':1,'go':1,'sh':1,'lua':1}
 let g:ycm_max_num_candidates = 100
+let g:ycm_auto_hover = ''
 
