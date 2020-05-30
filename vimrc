@@ -24,6 +24,7 @@ set mouse=a
 hi Search ctermfg=Black ctermbg=White
 hi CursorLine cterm=NONE ctermbg=235
 hi CursorLineNr cterm=NONE ctermbg=235
+hi ColorColumn cterm=NONE ctermbg=235
 
 nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
