@@ -7,7 +7,7 @@ Plugin 'VundleVim/Vundle.vim'     " let Vundle manage Vundle, required
 Plugin 'Vimjas/vim-python-pep8-indent'
 Plugin 'fatih/vim-go'
 Plugin 'preservim/nerdtree'
-Plugin 'Valloric/YouCompleteMe'
+Plugin 'ycm-core/YouCompleteMe'
 Plugin 'majutsushi/tagbar'
 call vundle#end()                 " required, Plugins must be added before this line
 
