@@ -4,10 +4,11 @@ set rtp+=~/.vim/bundle/Vundle.vim " set the runtime path to include Vundle and i
 
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'     " let Vundle manage Vundle, required
-Plugin 'Vimjas/vim-python-pep8-indent'
-Plugin 'fatih/vim-go'
+Plugin 'psf/black'
+" Plugin 'fatih/vim-go'
 Plugin 'preservim/nerdtree'
 Plugin 'ycm-core/YouCompleteMe'
+Plugin 'rust-lang/rust.vim'
 Plugin 'majutsushi/tagbar'
 call vundle#end()                 " required, Plugins must be added before this line
 
@@ -29,21 +30,21 @@ hi ColorColumn cterm=NONE ctermbg=235
 nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
 
-" vim-go
-let g:go_gopls_enabled = 0
-let g:go_code_completion_enabled = 0
-let g:go_gopls_enabled = 0
-let g:go_template_autocreate = 0
-let g:go_highlight_extra_types = 1
-let g:go_highlight_operators = 1
-let g:go_highlight_functions = 1
-let g:go_highlight_function_parameters = 1
-let g:go_highlight_function_calls = 1
-let g:go_highlight_types = 1
-let g:go_highlight_fields = 1
-let g:go_highlight_build_constraints = 1
-let g:go_highlight_variable_declarations = 1
-let g:go_highlight_variable_assignments = 1
+" " vim-go
+" let g:go_gopls_enabled = 0
+" let g:go_code_completion_enabled = 0
+" let g:go_gopls_enabled = 0
+" let g:go_template_autocreate = 0
+" let g:go_highlight_extra_types = 1
+" let g:go_highlight_operators = 1
+" let g:go_highlight_functions = 1
+" let g:go_highlight_function_parameters = 1
+" let g:go_highlight_function_calls = 1
+" let g:go_highlight_types = 1
+" let g:go_highlight_fields = 1
+" let g:go_highlight_build_constraints = 1
+" let g:go_highlight_variable_declarations = 1
+" let g:go_highlight_variable_assignments = 1
 
 " tagbar
 nnoremap <F12> :TagbarToggle<CR>
@@ -75,7 +76,7 @@ let g:ycm_key_invoke_completion = '<C-a>'
 let g:ycm_key_list_stop_completion = ['<CR>']
 let g:ycm_key_list_select_completion = ['<C-j>', '<Down>', '<Tab>']
 let g:ycm_key_list_previous_completion = ['<C-k>', '<Up>']
-let g:ycm_filetype_whitelist = {'c':1,'cpp':1,'python':1,'go':1,'sh':1,'lua':1,'java':1}
+let g:ycm_filetype_whitelist = {'c':1,'cc':1,'cpp':1,'py':1,'sh':1,'lua':1,'go':0,'rs':0,'java':0}
 let g:ycm_max_num_candidates = 100
 let g:ycm_auto_hover = ''
 
