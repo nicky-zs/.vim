@@ -4,8 +4,8 @@ set rtp+=~/.vim/bundle/Vundle.vim " set the runtime path to include Vundle and i
 
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'     " let Vundle manage Vundle, required
+Plugin 'Vimjas/vim-python-pep8-indent'
 Plugin 'psf/black'
-" Plugin 'fatih/vim-go'
 Plugin 'preservim/nerdtree'
 Plugin 'ycm-core/YouCompleteMe'
 Plugin 'rust-lang/rust.vim'
@@ -30,21 +30,7 @@ hi ColorColumn cterm=NONE ctermbg=235
 nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
 
-" " vim-go
-" let g:go_gopls_enabled = 0
-" let g:go_code_completion_enabled = 0
-" let g:go_gopls_enabled = 0
-" let g:go_template_autocreate = 0
-" let g:go_highlight_extra_types = 1
-" let g:go_highlight_operators = 1
-" let g:go_highlight_functions = 1
-" let g:go_highlight_function_parameters = 1
-" let g:go_highlight_function_calls = 1
-" let g:go_highlight_types = 1
-" let g:go_highlight_fields = 1
-" let g:go_highlight_build_constraints = 1
-" let g:go_highlight_variable_declarations = 1
-" let g:go_highlight_variable_assignments = 1
+let g:black_virtualenv = '~/.local/share/pipx/venvs/black'
 
 " tagbar
 nnoremap <F12> :TagbarToggle<CR>
