@@ -1,6 +1,14 @@
 # 我的VIM配置
 
-## 使用方法
+## Feature
+
+- 基础体检
+- python format
+- nerd tree
+- ctags
+- YCM
+
+## Usage
 
 1. 拉取 .vim 配置目录
 ```bash
@@ -18,4 +26,9 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```bash
 cd ~/.vim/bundle/YouCompleteMe
 python install.py -h   # 视需要安装
+```
+
+5. 安装 ctags
+```bash
+sudo apt install -y universal-ctags
 ```
